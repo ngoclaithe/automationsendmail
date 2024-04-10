@@ -1,0 +1,136 @@
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center ;
+    justify-content: center;
+    background: #f6f7fb;
+}
+.container {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    width: fit-content;
+    background: rgb(249, 247, 247);
+    justify-content: center;
+}
+.container .box{
+    position: relative;
+    height: 60px;
+    width: 60px;
+    border-radius: 12px;
+    border: 2px solid #333;
+}
+.box .image {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-image: url("../images/plus.png");
+}
+.box .hovered {
+    border: 2px dashed;
+}
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 10% auto; /* Adjust modal positioning */
+  padding: 20px;
+  border-radius: 10px; /* Add border radius for a softer look */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add box shadow for depth */
+  max-width: 400px; /* Limit maximum width for better readability */
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Label styles */
+label {
+  margin-bottom: 5px; /* Add spacing between labels */
+  font-weight: bold; /* Make labels bold for emphasis */
+  color: #333; /* Set label color */
+}
+
+/* Select styles */
+select {
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  color: #333;
+  transition: border-color 0.3s ease;
+}
+
+select:focus {
+  outline: none;
+  border-color: #5c90f4; /* Change border color on focus */
+}
+
+/* Option styles */
+option {
+  color: #333;
+}
+
+/* Button styles */
+button {
+  padding: 10px 20px;
+  margin-top: 10px; /* Add spacing between button and other elements */
+  border: none;
+  border-radius: 5px;
+  background-color: #5c90f4; /* Set button background color */
+  color: #fff; /* Set button text color */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #4a77d4; 
+}
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .options-menu {
+    position: absolute;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 5px 0;
+    z-index: 1;
+}
+
+.options-menu div {
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+.connector {
+    position: absolute;
+    border-left: 2px solid black;
+    z-index: -1;
+}
+#testWorkflowButton {
+  position: absolute;
+  bottom: 20px; 
+  right: 20px; 
+  z-index: 999;
+}
