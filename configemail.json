@@ -1,6 +1,12 @@
 {
-    "email": {
+  "email": [
+    {
       "username": "ngocvipns5@gmail.com",
       "password": "euwv osvq vlov dvqz"
+    },
+    {
+      "username": "ngocvipns2@gmail.com",
+      "password": "szez vhhw kxuz wulr"
     }
+  ]
 }
